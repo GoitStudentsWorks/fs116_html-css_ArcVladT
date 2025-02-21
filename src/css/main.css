@@ -8,11 +8,13 @@
 @import url('/css/reset.css');
 @import url('/css/base.css');
 @import url('/css/container.css');
-@import url('/css/animations.css');
 
 /* Sections style */
 @import url('/css/header.css');
-@import url('/css/vite-promo.css');
-@import url('/css/badges.css');
-@import url('/css/back-link.css');
+@import url('/css/hero.css');
+@import url('/css/how-it-works.css');
+@import url('/css/advertisement.css');
+@import url('/css/vegetables.css');
+@import url('/css/reviews.css');
+@import url('/css/your-order.css');
 @import url('/css/footer.css');
