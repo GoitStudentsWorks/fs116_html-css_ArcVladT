@@ -1,4 +1,8 @@
 .hero {
+  background-color: #576f35;
+}
+
+.hero-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,6 +102,7 @@
 
   .hero-container {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     align-items: center;
