@@ -90,6 +90,7 @@
 @media screen and (min-width: 1280px) {
   .hero-container-img {
     background-image: url(/images/hero/hero-desktop-1.jpg);
+    width: 50%;
     max-width: 640px;
     height: 796px;
   }
@@ -111,7 +112,7 @@
   }
 
   .hero-container-desk {
-    width: calc((100%) / 2);
+    width: 50%;
     flex: 1;
     padding: 0 38px 0 100px;
   }
