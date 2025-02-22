@@ -42,9 +42,10 @@
     margin-left: auto;
     background: none;
     border: none;
-    
+
 
 }
+
 .header-open {
     fill: transparent;
     stroke: #ffffff;
@@ -62,20 +63,21 @@
         margin-left: 32px;
     }
 
-    
-        .header-btn-menu{
-            margin-right: 32px;
-        }
+
+    .header-btn-menu {
+        margin-right: 32px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
 
-    
+
 
     .header-logo {
         margin-left: 100px;
     }
-    .header-container-wrap{
+
+    .header-container-wrap {
         display: flex;
     }
 
@@ -101,19 +103,19 @@
 
         white-space: nowrap;
         background-color: transparent;
-        transition: background-color 250ms;
+        transition: background-color 250ms, color 250ms, border 250ms;
 
 
     }
 
     .header-link:active {
-        border: none;
+        border: 1px solid #fbfbfb;
         color: #7a3145;
         background-color: #fbfbfb;
     }
 
     .header-link:hover {
-        border: none;
+        border: 1px solid #d4bfc4;
         color: #7a3145;
         background-color: #d4bfc4;
     }
