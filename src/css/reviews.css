@@ -119,9 +119,11 @@
     padding: 20px 21px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container-reviews {
     max-width: 1280px;
+    padding: 0 100px;
   }
 
   .reviews-header {
