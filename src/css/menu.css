@@ -54,7 +54,7 @@
   top: 20px;
   fill: #fbfbfb;
 }
-.tablet-menu-bg {
+.ph-menu-bg {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -62,7 +62,11 @@
   z-index: 1;
   right: 0;
   top: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
+
 @media only screen and (min-width: 768px) {
   .ph-menu-container {
     display: flex;
@@ -74,7 +78,13 @@
   .ph-menu-container {
     display: none;
   }
-  .tablet-menu-bg {
+  .ph-menu-bg {
     display: none;
   }
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
