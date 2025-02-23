@@ -1,0 +1,153 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.header-logo {
+    margin-left: 20px;
+    fill: #ffffff;
+}
+
+.header-container-wrap {
+    display: none;
+    align-items: center;
+}
+
+/* .header-nav {} */
+
+.header-list {
+    display: none;
+
+}
+
+/* .header-link {} */
+
+.header-btn {
+    display: none;
+}
+
+.header-btn-menu {
+    margin-right: 20px;
+    margin-left: auto;
+    background: none;
+    border: none;
+
+
+}
+
+.header-open {
+    fill: transparent;
+    stroke: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header-container {
+        padding-top: 32px;
+    }
+
+    .header-logo {
+        width: 216px;
+        height: 20px;
+        margin-left: 32px;
+    }
+
+
+    .header-btn-menu {
+        margin-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+
+
+    .header-logo {
+        margin-left: 100px;
+    }
+
+    .header-container-wrap {
+        display: flex;
+    }
+
+    /* .header-nav {} */
+
+    .header-list {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-right: 20px;
+    }
+
+    .header-link {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.25;
+        text-align: center;
+        color: #fbfbfb;
+        border: 1px solid #fbfbfb;
+        border-radius: 12px;
+        padding: 12px;
+
+        white-space: nowrap;
+        background-color: transparent;
+        transition: background-color 250ms, color 250ms, border 250ms;
+
+
+    }
+
+    .header-link:active {
+        border: 1px solid #fbfbfb;
+        color: #7a3145;
+        background-color: #fbfbfb;
+    }
+
+    .header-link:hover {
+        border: 1px solid #d4bfc4;
+        color: #7a3145;
+        background-color: #d4bfc4;
+    }
+
+    .header-btn {
+        display: block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.11111;
+        letter-spacing: -0.01em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        color: #fbfbfb;
+        border: none;
+        border-radius: 30px;
+        padding: 16px 32px;
+        background-color: #7a3145;
+        margin-right: 100px;
+        transition: background-color 250ms;
+    }
+
+    .header-btn:hover {
+        background-color: #d4bfc4;
+        color: #7a3145;
+    }
+
+    .header-btn:active {
+        background-color: #fbfbfb;
+        color: #7a3145;
+    }
+
+    .header-btn-menu {
+        display: none;
+    }
+}
