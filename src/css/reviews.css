@@ -87,17 +87,19 @@
 @media screen and (min-width: 768px) {
   .container-reviews {
     max-width: 786px;
-    max-height: 492px;
+    height: 492px;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 52px;
     justify-content: flex-start;
+    padding: 0 32px;
   }
 
   .reviews {
-    padding: 100px 32px;
     height: 692px;
+    padding: 0;
+    margin: 0;
   }
   .title {
     font-size: 64px;
@@ -115,8 +117,8 @@
     display: flex;
   }
   .item-reviews {
-    width: calc((100% - 24px) / 2);
-    width: 340px;
+    min-width: 340px;
+    max-width: 340px;
     margin: 0;
     padding: 20px 21px;
   }
@@ -132,7 +134,8 @@
   .reviews-header {
   }
   .item-reviews {
-    width: 344px;
+    min-width: 344px;
+    max-width: 344px;
   }
   .review-hidden-tablet {
     display: flex;
