@@ -86,7 +86,7 @@
 }
 @media screen and (min-width: 768px) {
   .container-reviews {
-    max-width: 786px;
+    max-width: 768px;
     height: 492px;
     width: 100%;
     flex-direction: row;
@@ -95,7 +95,9 @@
     justify-content: flex-start;
     padding: 0 32px;
   }
-
+  .list-reviews {
+    width: 704px;
+  }
   .reviews {
     height: 692px;
     padding: 0;
@@ -148,5 +150,6 @@
     padding: 0;
   }
   .list-reviews {
+    width: 1080px;
   }
 }
