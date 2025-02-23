@@ -1,0 +1,128 @@
+.hero {
+  background-color: #576f35;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #576f35;
+  margin: 0 auto;
+}
+
+.hero-container-desk {
+  padding: 0 20px;
+  text-align: left;
+}
+
+.hero-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  padding: 100px 0 20px 0;
+}
+
+@media only screen and (max-width: 352px) {
+  .hero-title {
+    font-size: 46px;
+  }
+}
+
+.hero-desc {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #fbfbfb;
+  padding-bottom: 40px;
+}
+
+.hero-container-img {
+  display: block;
+  background-image: url(/images/hero/hero-mob-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 375px;
+  height: 372px;
+}
+
+@media screen and (min-resolution 2x), (-webkit-min-device-pixel-ratio: 2) {
+  .hero-container-img {
+    background-image: url(/images/hero/hero-mob-1@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container-desk {
+    padding: 0 32px;
+  }
+
+  .hero-container-img {
+    background-image: url(/images/hero/hero-tablet-1.jpg);
+    max-width: 768px;
+    height: 536px;
+  }
+
+  @media screen and (min-resolution 2x), (-webkit-min-device-pixel-ratio: 2) {
+    .hero-container-img {
+      background-image: url(/images/hero/hero-tablet-1@2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-size: 76px;
+    padding: 120px 0 24px 0;
+  }
+}
+
+.hero-desc {
+  font-size: 16px;
+  padding-bottom: 52px;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container-img {
+    background-image: url(/images/hero/hero-desktop-1.jpg);
+    width: 50%;
+    max-width: 640px;
+    height: 796px;
+  }
+
+  @media screen and (min-resolution 2x), (-webkit-min-device-pixel-ratio: 2) {
+    .hero-container-img {
+      background-image: url(/images/hero/hero-desktop-1@2x.jpg);
+    }
+  }
+
+  .hero-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    max-width: 1280px;
+    padding: 0;
+  }
+
+  .hero-container-desk {
+    width: 50%;
+    flex: 1;
+    padding: 0 38px 0 100px;
+  }
+
+  .hero-title {
+    font-size: 76px;
+    padding: 220px 0 128px 0;
+  }
+
+  .hero-desc {
+    max-width: 460px;
+  }
+}
