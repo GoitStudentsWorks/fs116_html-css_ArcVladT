@@ -1,0 +1,59 @@
+  
+
+.container {
+    font-family: "Inter Tight", sans-serif;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+
+.advertisement {
+padding: 80px 20px;
+}
+
+.advertisement-text {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.08333;
+letter-spacing: -0.01em;
+text-transform: uppercase;
+color: #141414;
+text-align: left;
+}
+
+.advertisement-color {
+    background-color: #576f35;
+    border-radius: 12px;
+    color: #ffff;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+        padding: 100px 32px;
+    }
+
+    .advertisement-text {
+        font-size: 64px;
+        line-height: 1;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+
+    .container {
+        max-width: 1280px;
+        padding: 100px 110px;
+    }
+
+.advertisement-text {
+    font-size: 76px;
+    letter-spacing: -0.01em;
+}
+    
+.advertisement-color {
+    width: 808px;
+}
+
+}
