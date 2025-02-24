@@ -27,10 +27,12 @@
   padding-top: 12px;
   padding-bottom: 12px;
   width: 118px;
+  height: 44px;
   background: transparent;
   border: 1px solid #fbfbfb;
   border-radius: 12px;
   color: #ffff;
+  position: relative;
 }
 .ph-menu-btn:active {
   color: #7a3145;
@@ -93,4 +95,14 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+.a-link-modal {
+  width: 118px;
+  height: 44px;
+  opacity: 0;
+  display: inline-block;
+  top: 0;
+  position: absolute;
+  left: 0;
 }
