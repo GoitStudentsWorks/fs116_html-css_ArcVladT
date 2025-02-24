@@ -1,0 +1,95 @@
+.ph-menu-container {
+  width: 100%;
+  height: 100%;
+  background: #576f35;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  align-items: center;
+  padding-top: 296px;
+  padding-bottom: 52px;
+}
+.ph-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: auto;
+}
+.ph-menu-btn {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 118px;
+  background: transparent;
+  border: 1px solid #fbfbfb;
+  border-radius: 12px;
+  color: #ffff;
+}
+.ph-menu-btn:active {
+  color: #7a3145;
+  background: #fbfbfb;
+}
+.ph-menu-shop-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11111;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  background: #7a3145;
+  border-radius: 30px;
+  padding: 16px 41px;
+  border: none;
+}
+.menu-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  fill: #fbfbfb;
+  stroke: #fbfbfb;
+}
+.ph-menu-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(20, 20, 20, 0.4);
+  z-index: 1;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .ph-menu-container {
+    display: flex;
+    width: 351px;
+  }
+  .menu-close-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .ph-menu-container {
+    display: none;
+  }
+  .ph-menu-bg {
+    display: none;
+  }
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
