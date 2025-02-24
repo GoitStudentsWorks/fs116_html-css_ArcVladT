@@ -25,6 +25,7 @@ text-align: left;
     background-color: #576f35;
     border-radius: 12px;
     color: #ffff;
+    display: inline-block;
 }
 
 @media screen and (min-width:768px) {
@@ -37,6 +38,11 @@ text-align: left;
         font-size: 64px;
         line-height: 1;
     }
+
+    .advertisement-color {
+display: inline-block;
+padding: 15px 15px 5px 5px;
+}
 
 }
 
@@ -53,7 +59,8 @@ text-align: left;
 }
     
 .advertisement-color {
-    width: 808px;
+display: inline-block;
+padding: 5px 5px 5px 10px;
 }
 
 }
