@@ -54,6 +54,7 @@
   top: 20px;
   fill: #fbfbfb;
   stroke: #fbfbfb;
+  cursor: pointer;
 }
 .ph-menu-bg {
   width: 100%;
@@ -88,7 +89,7 @@
   }
 }
 
-.is-open {
+.ph-menu-bg.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
