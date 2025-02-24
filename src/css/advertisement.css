@@ -1,6 +1,6 @@
   
 
-.container {
+.container-advertisement {
     font-family: "Inter Tight", sans-serif;
     max-width: 375px;
     margin: 0 auto;
@@ -28,7 +28,7 @@ text-align: left;
 }
 
 @media screen and (min-width:768px) {
-    .container {
+    .container-advertisement {
         max-width: 768px;
         padding: 100px 32px;
     }
@@ -42,7 +42,7 @@ text-align: left;
 
 @media screen and (min-width:1280px) {
 
-    .container {
+    .container-advertisement {
         max-width: 1280px;
         padding: 100px 110px;
     }
