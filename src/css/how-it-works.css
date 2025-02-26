@@ -12,12 +12,11 @@
 }
 
 .work {
-  padding-top: 40px;
-  padding-bottom: 80px;
   background: linear-gradient(to bottom, #7a3145 44.04%, #576f35 44.04%);
 }
 
 .work-container {
+  padding: 40px 20px 80px;
   max-width: 375px;
   margin: 0 auto;
 
@@ -39,11 +38,6 @@
   overflow: hidden;
   margin: 0 auto;
   max-width: 335px;
-}
-
-.work-wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .work-subtitle {
@@ -136,12 +130,11 @@ strong {
 
 @media only screen and (min-width: 768px) {
   .work {
-    padding-top: 100px;
-    padding-bottom: 100px;
     background: linear-gradient(to bottom, #7a3145 54.3%, #576f35 54.3%);
   }
 
   .work-container {
+    padding: 100px 64px;
     max-width: 768px;
     gap: 200px;
   }
@@ -151,8 +144,8 @@ strong {
   }
 
   .work-wrapper {
-    padding-left: 164px;
-    padding-right: 164px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .work-subtitle {
@@ -195,6 +188,7 @@ strong {
   }
 
   .work-container {
+    padding: 100px;
     max-width: 1280px;
     flex-direction: row;
   }
