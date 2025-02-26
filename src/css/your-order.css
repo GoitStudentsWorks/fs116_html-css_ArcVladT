@@ -38,16 +38,27 @@
   background-color: #fbfbfb;
   border-radius: 30px;
   padding: 40px 20px;
+  width: 100%;
+  max-width: 335px;
+  height: 552px;
   margin: 40px 0 20px 0;
+  box-sizing: border-box;
 }
 
 .order-form-title {
+  font-family: 'Inter Tight', sans-serif;
   font-size: 28px;
   font-weight: 600;
   line-height: 1;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 349px) {
+  .order-form-title {
+    font-size: 24px;
+  }
 }
 
 .order-form-title .chianti {
@@ -60,6 +71,8 @@
 
 .form-input {
   width: 100%;
+  max-width: 295px;
+  height: 48px;
   padding: 16px 14px;
   border-radius: 30px;
   border: 1px solid #858585;
@@ -108,6 +121,8 @@
 .form-button {
   background-color: #7a3145;
   width: 100%;
+  max-width: 295px;
+  height: 52px;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -132,6 +147,9 @@
   border-radius: 30px;
   background-color: #7a3145;
   padding: 40px 20px;
+  width: 100%;
+  max-width: 335px;
+  height: 456px;
 }
 
 .order-socail-img {
@@ -208,14 +226,28 @@
   .order-form-container {
     padding: 72px 100px;
     margin: 0 0 32px 0;
+    max-width: 640px;
+    height: 632px;
   }
 
   .order-form-title {
-    font-size: 32px;
     font-weight: 600;
+    font-size: 32px;
     margin-bottom: 52px;
     line-height: 1;
-    letter-spacing: -0.015em;
+    letter-spacing: -0.01em;
+  }
+
+  .form-input {
+    max-width: 440px;
+  }
+
+  .form-button {
+    max-width: 440px;
+  }
+
+  .form-textarea {
+    height: 96px;
   }
 
   .form-input::placeholder,
@@ -232,6 +264,8 @@
 
   .order-social-container {
     padding: 52px;
+    max-width: 640px;
+    height: 528px;
   }
 
   .order-socail-img {
@@ -249,11 +283,6 @@
 
   .order-section {
     padding: 100px 0;
-  }
-
-  .order-container {
-    width: 1080px;
-    margin: 0 auto;
   }
 
   /* Description styles */
@@ -284,14 +313,21 @@
   /* Form styles */
 
   .order-form-container {
-    flex-basis: calc((100% - 32px) / 2);
     padding: 52px 48px;
     margin-bottom: 0;
+    width: 524px;
+    height: 592px;
   }
 
   .form-textarea {
+    max-width: 428px;
     height: 96px;
     margin-bottom: 24px;
+  }
+
+  .form-input {
+    max-width: 428px;
+    height: 52px;
   }
 
   .form-button:hover {
@@ -303,8 +339,9 @@
   /* Social styles */
 
   .order-social-container {
-    flex-basis: calc((100% - 32px) / 2);
     padding: 52px 48px;
+    width: 524px;
+    height: 592px;
   }
 
   .order-socail-img {
