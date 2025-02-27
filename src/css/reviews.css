@@ -16,7 +16,7 @@
   flex-direction: column;
   gap: 20px;
 
-  max-width: 335px;
+  width: 100%;
 }
 .title {
   font-weight: 600;
@@ -86,7 +86,7 @@
 @media screen and (min-width: 768px) {
   .container-reviews {
     max-width: 768px;
-    height: 492px;
+
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -126,7 +126,7 @@
 @media screen and (min-width: 1280px) {
   .container-reviews {
     max-width: 1280px;
-    max-height: 492px;
+
     padding: 0 100px;
   }
 
