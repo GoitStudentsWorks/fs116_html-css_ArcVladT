@@ -1,1 +1,60 @@
-your-order
+<section class="order-section">
+  <div class="container order-container">
+    <div class="order-description">
+      <h2 class="order-description-title">
+        Fresh <span>Harvest</span> Box has got you covered
+      </h2>
+      <p class="order-description-text">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+    </div>
+
+    <div class="order-content-wrap">
+      <div class="order-form-container">
+        <p class="order-form-title">
+          Ordering <span class="chianti">from us </span> is quick and easy! Fill
+          out <span class="green"> the form </span> below and we will contact
+          you !
+        </p>
+
+        <form class="form" action="#" method="POST">
+          <input class="form-input" type="text" aria-label="Full Name" name="username" value="" id="username"
+            placeholder="Full Name" pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ']+" autocomplete="off" required />
+          <input class="form-input" type="email" aria-label="Email" id="email" name="email"
+            placeholder="Enter your email" pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
+            autocomplete="off" required />
+          <textarea class="form-textarea" id="message" name="message" placeholder="Comment"></textarea>
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="order-social-container">
+        <picture>
+          <source srcset="/images/your-order/desktop.jpg 1x , /images/your-order/2x/desktop@2x.jpg @2x.jpg 2x"
+            media="(min-width: 1280px)" />
+          <source srcset="/images/your-order/tablet.jpg 1x  1x , /images/your-order/2x/tablet@2x.jpg 2x"
+            media="(min-width: 768px)" />
+          <img class="order-socail-img"
+            srcset="/images/your-order/mobile.jpg 1x, /images/your-order/2x/mobile@2x.jpg 2x"
+            src="/src/images/your-order/mobile.jpg" alt="Person makes some juice" />
+        </picture>
+        <p class="order-social-text">Follow us on our social networks:</p>
+        <ul class="order-social-menu">
+          <li class="order-social-item">
+            <a class="order-social-link" href="https://www.instagram.com/goitclub/">instagram</a>
+            <span>/</span>
+          </li>
+          <li class="order-social-item">
+            <a class="order-social-link" href="https://www.facebook.com/goITclub/">facebook</a>
+            <span>/</span>
+          </li>
+          <li class="order-social-item">
+            <a class="order-social-link" href="https://www.youtube.com/c/GoIT">youtube</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
