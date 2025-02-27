@@ -5,6 +5,7 @@
 
 .order-container {
   margin: 0 auto;
+  max-width: 335px;
 }
 
 /* Description styles */
@@ -12,7 +13,6 @@
 .order-description {
   color: #fbfbfb;
   margin-bottom: 40px;
-  /* max-width: 335px; */
 }
 
 .order-description-title {
@@ -34,6 +34,12 @@
   line-height: 1.43;
 }
 
+.order-content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /* Form styles */
 
 .order-form-container {
@@ -43,7 +49,6 @@
   width: 100%;
   max-width: 335px;
   height: 552px;
-  margin: 0 0 20px 0;
   box-sizing: border-box;
 }
 
@@ -170,10 +175,10 @@
 .order-social-menu {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 12px;
+  gap: 8px;
 }
 
-.order-social-link {
+.order-social-item {
   color: #fbfbfb;
   text-transform: uppercase;
   font-size: 18px;
@@ -182,11 +187,9 @@
   line-height: 1.1;
 }
 
-.order-social-item span {
-  color: #fbfbfb;
-  width: 7px;
+.order-social-item:not(:last-child)::after {
+  content: '/';
   margin-left: 8px;
-  margin-right: 8px;
 }
 
 /* Media */
@@ -195,20 +198,21 @@
   /* General styles */
 
   .order-section {
-    padding: 100px 0;
+    padding: 100px 64px;
   }
 
   .order-container {
-    padding: 0 64px;
+    max-width: 640px;
   }
 
   .order-description {
-    padding: 0 96px 0 32px;
+    transform: translateX(-32px);
     color: #fbfbfb;
     margin-bottom: 52px;
   }
 
   .order-content-wrap {
+    gap: 32px;
   }
 
   /* Description styles */
@@ -228,7 +232,6 @@
 
   .order-form-container {
     padding: 72px 100px;
-    margin-bottom: 32px;
     max-width: 640px;
     height: 632px;
   }
@@ -292,18 +295,37 @@
     font-size: 16px;
     line-height: 1.25;
   }
+
+  .order-social-item:not(:last-child)::after {
+    content: '/';
+    margin-left: 12px;
+  }
+
+  .order-social-menu {
+    gap: 12px;
+  }
+  .order-social-item:not(:last-child)::after {
+    content: '/';
+    margin-left: 12px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   /* Description styles */
+  .order-section {
+    padding: 100px 100px;
+  }
 
   .order-container {
-    padding: 0 100px;
+    max-width: 1080px;
+    margin: 0 auto;
   }
 
   .order-description {
-    width: 761px;
+    transform: none;
+    width: 751px;
     margin-bottom: 52px;
+    padding: 0;
   }
 
   .order-description-title {
@@ -317,12 +339,12 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.25;
+    padding-right: 9px;
   }
 
   /* Wrap styles */
   .order-content-wrap {
-    display: flex;
-    gap: 32px;
+    flex-direction: row;
     max-width: 1080px;
   }
 
