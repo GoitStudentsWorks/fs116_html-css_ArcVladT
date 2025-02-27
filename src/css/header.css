@@ -15,7 +15,6 @@
 }
 
 .header-logo {
-  margin-left: 20px;
   fill: #ffffff;
 }
 
@@ -37,7 +36,6 @@
 }
 
 .header-btn-menu {
-  margin-right: 20px;
   margin-left: auto;
   background: none;
   border: none;
@@ -56,18 +54,11 @@
   .header-logo {
     width: 216px;
     height: 20px;
-    margin-left: 32px;
   }
 
-  .header-btn-menu {
-    margin-right: 32px;
-  }
 }
 
 @media screen and (min-width: 1280px) {
-  .header-logo {
-    margin-left: 100px;
-  }
 
   .header-container-wrap {
     display: flex;
@@ -126,7 +117,6 @@
     border-radius: 30px;
     padding: 16px 32px;
     background-color: #7a3145;
-    margin-right: 100px;
     transition: background-color 250ms;
   }
 
