@@ -6,12 +6,11 @@
 .container-vegetables {
   margin: 0 auto;
   padding: 0 20px;
- 
   display: flex;
- flex-direction: column;
-  align-items:flex-start;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.wrap{
+.wrap {
   margin-bottom: 40px;
 }
 .vegetables-title {
@@ -42,12 +41,9 @@
 }
 
 .vegetables-item {
- 
 }
 
 .item-wrapper {
-
-  
   height: 376px;
   border-radius: 40px;
   padding: 32px 24px;
@@ -73,14 +69,19 @@
 }
 
 .vegetables-img {
- 
 }
 
 @media only screen and (min-width: 768px) {
+  .vegetables {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .container-vegetables {
+    padding: 0 32px;
+  }
   .wrap {
-      padding-left: 12px;
-      margin-bottom: 52px;
-    }
+    margin-bottom: 52px;
+  }
   .vegetables-title {
     font-size: 64px;
     line-height: 1;
@@ -92,26 +93,25 @@
   .vegetables-list {
     display: flex;
     justify-content: center;
-    gap:0;
+    gap: 0;
     column-gap: 24px;
     row-gap: 28px;
   }
-  
-    .item-wrapper{
-      width: 340px;
-        height: 380px;
-      padding-right: 30px;
-      padding-left: 30px;
-    }
-    
-.vegetables-subtitles{
+
+  .item-wrapper {
+    width: 340px;
+    height: 380px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .vegetables-subtitles {
     font-size: 32px;
-}
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .wrap {
-        padding-left: 86px;
-      }
-  }
- 
+  .container-vegetables {
+      padding: 0 100px;
+    }
+}
