@@ -1,67 +1,61 @@
-
 .container-advertisement {
-    font-family: "Inter Tight", sans-serif;
-    display: flex;
-    max-width: 375px;
-    margin: 0 auto;
-    padding: 80px 20px;
+  font-family: 'Inter Tight', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 
- .advertisement-text {
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 1.1;
-    letter-spacing: -0.01em;
-    text-transform: uppercase;
-    color: #141414;
-    text-align: left;
-    }
+.advertisement-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  text-align: left;
+  position: relative;
+}
 
-    .advertisement-color{
-       background-color: #576f35;
-        border-radius: 12px;
-        color: #ffff;
-        display: inline-block;
-    }
+.advertisement-color {
+  background-color: #576f35;
+  border-radius: 12px;
+  color: #ffff;
+  display: inline-block;
+}
 
-    
+@media screen and (min-width: 768px) {
+  .container-advertisement {
+    padding: 100px 0;
+  }
 
-    @media screen and (min-width:768px) {
-        .container-advertisement {
-            max-width: 768px;
-            padding: 100px 32px;
-        }
-    
-        .advertisement-text {
-            font-size: 64px;
-            line-height: 1;
-        }
-    
-        .advertisement-color {
+  .advertisement-text {
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  .advertisement-color {
     display: inline-block;
     padding: 20px 15px 4px 0;
-    }
-    
-    }
+  }
+}
 
-    @media screen and (min-width:1280px) { 
+@media screen and (min-width: 1280px) {
+  .container-advertisement {
+    padding: 100px 0;
+    z-index: 700;
+  }
 
-        .container-advertisement {
-            max-width: 1280px;
-            padding: 100px;
-            z-index: 700;
-        }
+  .advertisement-text {
+    font-size: 76px;
+    line-height: 1;
+    text-transform: uppercase;
+    z-index: 900;
+    padding-left: 16px;
+  }
 
-
-        .advertisement-text {
-            font-size: 76px;
-            line-height: 1;
-text-transform: uppercase;
-z-index: 900;
-padding-left: 16px;
-        }
-
-.text-advertisement{
+  .text-advertisement {
     position: absolute;
     border-radius: 12px;
     width: 818px;
@@ -71,10 +65,9 @@ padding-left: 16px;
     padding-top: 80px;
     background-color: #576f35;
     z-index: 800;
-}
+  }
 
-.advertisement-color {
+  .advertisement-color {
     padding: 0;
+  }
 }
-
-    }
