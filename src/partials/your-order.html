@@ -21,8 +21,7 @@
 
         <form class="form" action="#" method="POST">
           <input class="form-input" type="text" aria-label="Full Name" name="username" value="" id="username"
-            placeholder="Full Name" pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
-            autocomplete="off" required />
+            placeholder="Full Name" pattern="[A-Za-zА-Яа-яЁёІіЇїЄєҐґ']+" autocomplete="off" required />
           <input class="form-input" type="email" aria-label="Email" id="email" name="email"
             placeholder="Enter your email" pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})"
             autocomplete="off" required />
@@ -37,10 +36,9 @@
             media="(min-width: 1280px)" />
           <source srcset="/images/your-order/tablet.jpg 1x  1x , /images/your-order/2x/tablet@2x.jpg 2x"
             media="(min-width: 768px)" />
-          <img class="order-socail-img" srcset="
-              /images/your-order/mobile.jpg1x,
-              /images/your-order/2x/mobile@2x.jpg 2x
-            " src="/images/your-order/mobile.jpg" alt="Person makes some juice" />
+          <img class="order-socail-img"
+            srcset="/images/your-order/mobile.jpg 1x, /images/your-order/2x/mobile@2x.jpg 2x"
+            src="/src/images/your-order/mobile.jpg" alt="Person makes some juice" />
         </picture>
         <p class="order-social-text">Follow us on our social networks:</p>
         <ul class="order-social-menu">
