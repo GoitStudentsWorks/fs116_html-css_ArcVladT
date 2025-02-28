@@ -79,7 +79,6 @@
   border-radius: 15px;
   padding: 12px 27px 12px 24px;
   max-width: 335px;
-  height: 84px;
 
   background-color: #fbfbfb;
 
@@ -167,17 +166,12 @@ strong {
   .work-item {
     padding: 12px 15px 12px 24px;
     max-width: 440px;
-    height: 76px;
   }
 
   .work-desc {
     font-size: 16px;
     line-height: 1.25;
     width: 325px;
-  }
-
-  .work-desc-second {
-    max-width: unset;
   }
 }
 
