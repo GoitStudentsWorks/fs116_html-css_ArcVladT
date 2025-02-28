@@ -5,7 +5,6 @@
 
 .order-container {
   margin: 0 auto;
-  max-width: 335px;
 }
 
 /* Description styles */
@@ -198,11 +197,7 @@
   /* General styles */
 
   .order-section {
-    padding: 100px 64px;
-  }
-
-  .order-container {
-    max-width: 640px;
+    padding: 100px 32px;
   }
 
   .order-description {
@@ -313,12 +308,7 @@
 @media screen and (min-width: 1280px) {
   /* Description styles */
   .order-section {
-    padding: 100px 100px;
-  }
-
-  .order-container {
-    max-width: 1080px;
-    margin: 0 auto;
+    padding: 100px 0;
   }
 
   .order-description {
